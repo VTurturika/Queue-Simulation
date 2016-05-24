@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple-server model</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="./js/fraction.min.js"></script>
+    <script src="./js/jquery-1.12.3.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+
+<header>
+    <form action="">
+
+        <label for="time">Time of modelling</label>
+        <input type="text" id="time" placeholder="minutes">
+
+        <label for="lambda">Arrival rate</label>
+        <input type="text" id="lambda" placeholder="task per hour">
+
+        <label for="meanServiceTime">Mean service time</label>
+        <input type="text" id="meanServiceTime" placeholder="hours">
+
+        <input type="button" id="start" value="Start">
+        <input type="button" id="stop" value="Stop">
+    </form>
+
+</header>
+
+<div id="servers">
+
+    <div class="server">
+        <img id="s1" src="res/service.png" alt="">
+        <input type="text" value="Available">
+    </div>
+
+    <div class="server">
+        <img id="s2" src="res/service.png" alt="">
+        <input type="text" value="Available">
+    </div>
+
+    <div class="server">
+        <img id="s3" src="res/service.png" alt="">
+        <input type="text" value="Available">
+    </div>
+
+</div>
+
+<div id="timer">
+    <label for="timer">Time passed</label>
+    <input type="text" id="timerWindow" value="" placeholder="time" disabled>
+</div>
+
+<div id="result">
+
+    <label for="arrived">Arrived</label>
+    <input id="arrived" type="text" disabled>
+
+    <label for="serviced">Serviced</label>
+    <input id="serviced" type="text" disabled>
+
+    <label for="rejected">Rejected</label>
+    <input id="rejected" type="text" disabled>
+
+    <label for="serviceTime">Total service time</label>
+    <input id="serviceTime" type="text" disabled>
+
+</div>
+
+<div id="task">
+    <img src="./res/oie_transparent.png" alt="">
+</div>
+
+</body>
+</html>
